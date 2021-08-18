@@ -1,0 +1,36 @@
+<!<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h2>CALCULADORA</h2>
+
+      <input id="num1" type="text" placeholder="Digite um número" autocomplete="off">
+
+      <select id="operacao">
+        <option value="">Selecione</option>
+        <!-- option[value=$]*4 -->
+        <option value="1">Soma</option>
+        <option value="2">Subtração</option>
+        <option value="3">Multiplicação</option>
+        <option value="4">Divisão</option>
+      </select>
+
+      <input id="num2" type="text" placeholder="Digite um número" autocomplete="off">
+
+      <input onclick="calcular()" type="button" value="CALCULAR">
+
+      <label for="">Resultado:</label>
+      <input id="resultado" type="text" readonly>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
